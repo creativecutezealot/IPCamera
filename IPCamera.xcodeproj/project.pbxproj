@@ -1,0 +1,672 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8443758225F9851E00D5D8EA /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443758125F9851E00D5D8EA /* CameraViewController.swift */; };
+		8443758725F9853300D5D8EA /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8443758625F9853300D5D8EA /* StreamViewController.swift */; };
+		84C1444425F92C4000BBA115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1444325F92C4000BBA115 /* AppDelegate.swift */; };
+		84C1444825F92C4000BBA115 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1444725F92C4000BBA115 /* ViewController.swift */; };
+		84C1444B25F92C4000BBA115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C1444925F92C4000BBA115 /* Main.storyboard */; };
+		84C1444D25F92C4100BBA115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C1444C25F92C4100BBA115 /* Assets.xcassets */; };
+		84C1445025F92C4100BBA115 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C1444E25F92C4100BBA115 /* LaunchScreen.storyboard */; };
+		84C1445B25F92C4100BBA115 /* IPCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1445A25F92C4100BBA115 /* IPCameraTests.swift */; };
+		84C1446625F92C4100BBA115 /* IPCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1446525F92C4100BBA115 /* IPCameraUITests.swift */; };
+		9376A3B11307899D90B1440D /* Pods_IPCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F777E7537C5F11D3BA8F9B /* Pods_IPCamera.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84C1445725F92C4100BBA115 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C1443825F92C3F00BBA115 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C1443F25F92C3F00BBA115;
+			remoteInfo = IPCamera;
+		};
+		84C1446225F92C4100BBA115 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C1443825F92C3F00BBA115 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C1443F25F92C3F00BBA115;
+			remoteInfo = IPCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48AF7E98AEF064D2FA1CDC43 /* Pods-IPCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPCamera.release.xcconfig"; path = "Target Support Files/Pods-IPCamera/Pods-IPCamera.release.xcconfig"; sourceTree = "<group>"; };
+		75F777E7537C5F11D3BA8F9B /* Pods_IPCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8443758125F9851E00D5D8EA /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		8443758625F9853300D5D8EA /* StreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
+		84C1444025F92C3F00BBA115 /* IPCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C1444325F92C4000BBA115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84C1444725F92C4000BBA115 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84C1444A25F92C4000BBA115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84C1444C25F92C4100BBA115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84C1444F25F92C4100BBA115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84C1445125F92C4100BBA115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C1445625F92C4100BBA115 /* IPCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C1445A25F92C4100BBA115 /* IPCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPCameraTests.swift; sourceTree = "<group>"; };
+		84C1445C25F92C4100BBA115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84C1446125F92C4100BBA115 /* IPCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IPCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C1446525F92C4100BBA115 /* IPCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPCameraUITests.swift; sourceTree = "<group>"; };
+		84C1446725F92C4100BBA115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB7E54B473901F84BBD4704C /* Pods-IPCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPCamera.debug.xcconfig"; path = "Target Support Files/Pods-IPCamera/Pods-IPCamera.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84C1443D25F92C3F00BBA115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9376A3B11307899D90B1440D /* Pods_IPCamera.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C1445325F92C4100BBA115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C1445E25F92C4100BBA115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CA16178ADE4BD51FA3B4AE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75F777E7537C5F11D3BA8F9B /* Pods_IPCamera.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31C03726F71082C69C9F930B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB7E54B473901F84BBD4704C /* Pods-IPCamera.debug.xcconfig */,
+				48AF7E98AEF064D2FA1CDC43 /* Pods-IPCamera.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		84C1443725F92C3F00BBA115 = {
+			isa = PBXGroup;
+			children = (
+				84C1444225F92C3F00BBA115 /* IPCamera */,
+				84C1445925F92C4100BBA115 /* IPCameraTests */,
+				84C1446425F92C4100BBA115 /* IPCameraUITests */,
+				84C1444125F92C3F00BBA115 /* Products */,
+				31C03726F71082C69C9F930B /* Pods */,
+				1CA16178ADE4BD51FA3B4AE2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84C1444125F92C3F00BBA115 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C1444025F92C3F00BBA115 /* IPCamera.app */,
+				84C1445625F92C4100BBA115 /* IPCameraTests.xctest */,
+				84C1446125F92C4100BBA115 /* IPCameraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84C1444225F92C3F00BBA115 /* IPCamera */ = {
+			isa = PBXGroup;
+			children = (
+				84C1444325F92C4000BBA115 /* AppDelegate.swift */,
+				84C1444725F92C4000BBA115 /* ViewController.swift */,
+				8443758125F9851E00D5D8EA /* CameraViewController.swift */,
+				8443758625F9853300D5D8EA /* StreamViewController.swift */,
+				84C1444925F92C4000BBA115 /* Main.storyboard */,
+				84C1444C25F92C4100BBA115 /* Assets.xcassets */,
+				84C1444E25F92C4100BBA115 /* LaunchScreen.storyboard */,
+				84C1445125F92C4100BBA115 /* Info.plist */,
+			);
+			path = IPCamera;
+			sourceTree = "<group>";
+		};
+		84C1445925F92C4100BBA115 /* IPCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				84C1445A25F92C4100BBA115 /* IPCameraTests.swift */,
+				84C1445C25F92C4100BBA115 /* Info.plist */,
+			);
+			path = IPCameraTests;
+			sourceTree = "<group>";
+		};
+		84C1446425F92C4100BBA115 /* IPCameraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84C1446525F92C4100BBA115 /* IPCameraUITests.swift */,
+				84C1446725F92C4100BBA115 /* Info.plist */,
+			);
+			path = IPCameraUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84C1443F25F92C3F00BBA115 /* IPCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C1446A25F92C4100BBA115 /* Build configuration list for PBXNativeTarget "IPCamera" */;
+			buildPhases = (
+				63B7C74706E51F4BF547A630 /* [CP] Check Pods Manifest.lock */,
+				84C1443C25F92C3F00BBA115 /* Sources */,
+				84C1443D25F92C3F00BBA115 /* Frameworks */,
+				84C1443E25F92C3F00BBA115 /* Resources */,
+				6BBE31295B9A1DF060502A3B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPCamera;
+			productName = IPCamera;
+			productReference = 84C1444025F92C3F00BBA115 /* IPCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84C1445525F92C4100BBA115 /* IPCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C1446D25F92C4100BBA115 /* Build configuration list for PBXNativeTarget "IPCameraTests" */;
+			buildPhases = (
+				84C1445225F92C4100BBA115 /* Sources */,
+				84C1445325F92C4100BBA115 /* Frameworks */,
+				84C1445425F92C4100BBA115 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84C1445825F92C4100BBA115 /* PBXTargetDependency */,
+			);
+			name = IPCameraTests;
+			productName = IPCameraTests;
+			productReference = 84C1445625F92C4100BBA115 /* IPCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84C1446025F92C4100BBA115 /* IPCameraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C1447025F92C4100BBA115 /* Build configuration list for PBXNativeTarget "IPCameraUITests" */;
+			buildPhases = (
+				84C1445D25F92C4100BBA115 /* Sources */,
+				84C1445E25F92C4100BBA115 /* Frameworks */,
+				84C1445F25F92C4100BBA115 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84C1446325F92C4100BBA115 /* PBXTargetDependency */,
+			);
+			name = IPCameraUITests;
+			productName = IPCameraUITests;
+			productReference = 84C1446125F92C4100BBA115 /* IPCameraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84C1443825F92C3F00BBA115 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					84C1443F25F92C3F00BBA115 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					84C1445525F92C4100BBA115 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 84C1443F25F92C3F00BBA115;
+					};
+					84C1446025F92C4100BBA115 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 84C1443F25F92C3F00BBA115;
+					};
+				};
+			};
+			buildConfigurationList = 84C1443B25F92C3F00BBA115 /* Build configuration list for PBXProject "IPCamera" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84C1443725F92C3F00BBA115;
+			productRefGroup = 84C1444125F92C3F00BBA115 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84C1443F25F92C3F00BBA115 /* IPCamera */,
+				84C1445525F92C4100BBA115 /* IPCameraTests */,
+				84C1446025F92C4100BBA115 /* IPCameraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84C1443E25F92C3F00BBA115 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C1445025F92C4100BBA115 /* LaunchScreen.storyboard in Resources */,
+				84C1444D25F92C4100BBA115 /* Assets.xcassets in Resources */,
+				84C1444B25F92C4000BBA115 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C1445425F92C4100BBA115 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C1445F25F92C4100BBA115 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63B7C74706E51F4BF547A630 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IPCamera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BBE31295B9A1DF060502A3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IPCamera/Pods-IPCamera-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IPCamera/Pods-IPCamera-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IPCamera/Pods-IPCamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84C1443C25F92C3F00BBA115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8443758725F9853300D5D8EA /* StreamViewController.swift in Sources */,
+				84C1444825F92C4000BBA115 /* ViewController.swift in Sources */,
+				84C1444425F92C4000BBA115 /* AppDelegate.swift in Sources */,
+				8443758225F9851E00D5D8EA /* CameraViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C1445225F92C4100BBA115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C1445B25F92C4100BBA115 /* IPCameraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C1445D25F92C4100BBA115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C1446625F92C4100BBA115 /* IPCameraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84C1445825F92C4100BBA115 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84C1443F25F92C3F00BBA115 /* IPCamera */;
+			targetProxy = 84C1445725F92C4100BBA115 /* PBXContainerItemProxy */;
+		};
+		84C1446325F92C4100BBA115 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84C1443F25F92C3F00BBA115 /* IPCamera */;
+			targetProxy = 84C1446225F92C4100BBA115 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84C1444925F92C4000BBA115 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C1444A25F92C4000BBA115 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84C1444E25F92C4100BBA115 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C1444F25F92C4100BBA115 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84C1446825F92C4100BBA115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84C1446925F92C4100BBA115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84C1446B25F92C4100BBA115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB7E54B473901F84BBD4704C /* Pods-IPCamera.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4865JN8739;
+				INFOPLIST_FILE = IPCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeB.ipCam.ipcamera.IPCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		84C1446C25F92C4100BBA115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48AF7E98AEF064D2FA1CDC43 /* Pods-IPCamera.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4865JN8739;
+				INFOPLIST_FILE = IPCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeB.ipCam.ipcamera.IPCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		84C1446E25F92C4100BBA115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4865JN8739;
+				INFOPLIST_FILE = IPCameraTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeB.ipCam.ipcamera.IPCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPCamera.app/IPCamera";
+			};
+			name = Debug;
+		};
+		84C1446F25F92C4100BBA115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4865JN8739;
+				INFOPLIST_FILE = IPCameraTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeB.ipCam.ipcamera.IPCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IPCamera.app/IPCamera";
+			};
+			name = Release;
+		};
+		84C1447125F92C4100BBA115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4865JN8739;
+				INFOPLIST_FILE = IPCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeB.ipCam.ipcamera.IPCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IPCamera;
+			};
+			name = Debug;
+		};
+		84C1447225F92C4100BBA115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4865JN8739;
+				INFOPLIST_FILE = IPCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joeB.ipCam.ipcamera.IPCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IPCamera;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84C1443B25F92C3F00BBA115 /* Build configuration list for PBXProject "IPCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C1446825F92C4100BBA115 /* Debug */,
+				84C1446925F92C4100BBA115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C1446A25F92C4100BBA115 /* Build configuration list for PBXNativeTarget "IPCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C1446B25F92C4100BBA115 /* Debug */,
+				84C1446C25F92C4100BBA115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C1446D25F92C4100BBA115 /* Build configuration list for PBXNativeTarget "IPCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C1446E25F92C4100BBA115 /* Debug */,
+				84C1446F25F92C4100BBA115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C1447025F92C4100BBA115 /* Build configuration list for PBXNativeTarget "IPCameraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C1447125F92C4100BBA115 /* Debug */,
+				84C1447225F92C4100BBA115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84C1443825F92C3F00BBA115 /* Project object */;
+}

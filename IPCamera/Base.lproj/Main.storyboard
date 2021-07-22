@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8F9-RI-KSo">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IPCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEK-gG-nvl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hbb-CI-VuC">
+                                        <rect key="frame" x="40" y="200" width="334" height="50"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Kfp-zF-wwD"/>
+                                        </constraints>
+                                        <state key="normal" title="View">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onStreamView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u02-3z-1CK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47P-QY-ieP">
+                                        <rect key="frame" x="40" y="270" width="334" height="50"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="a8A-Rd-J4A"/>
+                                        </constraints>
+                                        <state key="normal" title="Camera">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xBH-ui-j7B"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="47P-QY-ieP" secondAttribute="trailing" constant="40" id="1Um-mv-ZHP"/>
+                                    <constraint firstItem="Hbb-CI-VuC" firstAttribute="top" secondItem="jEK-gG-nvl" secondAttribute="top" constant="200" id="2xk-dl-qFq"/>
+                                    <constraint firstItem="Hbb-CI-VuC" firstAttribute="leading" secondItem="jEK-gG-nvl" secondAttribute="leading" constant="40" id="62B-J5-x9O"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hbb-CI-VuC" secondAttribute="trailing" constant="40" id="OQS-Vh-lcQ"/>
+                                    <constraint firstItem="47P-QY-ieP" firstAttribute="leading" secondItem="jEK-gG-nvl" secondAttribute="leading" constant="40" id="Zkn-UG-nY6"/>
+                                    <constraint firstItem="47P-QY-ieP" firstAttribute="top" secondItem="Hbb-CI-VuC" secondAttribute="bottom" constant="20" id="brb-dV-CBr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jEK-gG-nvl" secondAttribute="trailing" id="OcL-g6-O2r"/>
+                            <constraint firstItem="jEK-gG-nvl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jbM-bX-fEp"/>
+                            <constraint firstItem="jEK-gG-nvl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="le5-wc-qX3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jEK-gG-nvl" secondAttribute="bottom" id="vXC-Nk-olB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jdw-5u-nUa"/>
+                    <connections>
+                        <outlet property="btnCamera" destination="47P-QY-ieP" id="GOd-gb-eOV"/>
+                        <outlet property="btnView" destination="Hbb-CI-VuC" id="ZWr-rS-Ub4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="104"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="wQ5-tH-6K5">
+            <objects>
+                <viewController storyboardIdentifier="CameraViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DbR-Yk-SxO" customClass="CameraViewController" customModule="IPCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tfr-bU-8lU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33f-dj-Cyp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IP Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGN-iQ-RM2">
+                                        <rect key="frame" x="20" y="695" width="81.333333333333329" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d70-8q-t2s">
+                                        <rect key="frame" x="374" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="D3l-1q-jJu"/>
+                                            <constraint firstAttribute="height" constant="30" id="D4Q-8b-I1m"/>
+                                        </constraints>
+                                        <state key="normal" image="ic_switch_cam"/>
+                                        <connections>
+                                            <action selector="onSwitchCam:" destination="DbR-Yk-SxO" eventType="touchUpInside" id="eNt-az-BUh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="AGN-iQ-RM2" firstAttribute="leading" secondItem="33f-dj-Cyp" secondAttribute="leading" constant="20" id="3El-c8-aIS"/>
+                                    <constraint firstAttribute="trailing" secondItem="d70-8q-t2s" secondAttribute="trailing" constant="10" id="3Qe-B2-o9r"/>
+                                    <constraint firstItem="d70-8q-t2s" firstAttribute="top" secondItem="33f-dj-Cyp" secondAttribute="top" constant="10" id="7zr-0N-8Gk"/>
+                                    <constraint firstAttribute="bottom" secondItem="AGN-iQ-RM2" secondAttribute="bottom" constant="20" id="cAt-A5-DUS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uTJ-mz-U0p"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="33f-dj-Cyp" firstAttribute="top" secondItem="uTJ-mz-U0p" secondAttribute="top" id="1hV-Rj-KQe"/>
+                            <constraint firstItem="33f-dj-Cyp" firstAttribute="leading" secondItem="uTJ-mz-U0p" secondAttribute="leading" id="4OE-Sm-Xun"/>
+                            <constraint firstItem="uTJ-mz-U0p" firstAttribute="bottom" secondItem="33f-dj-Cyp" secondAttribute="bottom" id="fEF-i0-uSK"/>
+                            <constraint firstItem="uTJ-mz-U0p" firstAttribute="trailing" secondItem="33f-dj-Cyp" secondAttribute="trailing" id="hnX-c3-nBt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnSwitchCam" destination="d70-8q-t2s" id="m4U-rf-A9a"/>
+                        <outlet property="lblipaddress" destination="AGN-iQ-RM2" id="z7N-Ts-qko"/>
+                        <outlet property="mainView" destination="33f-dj-Cyp" id="J0N-7D-d0E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tqz-qm-2YH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1617" y="-302"/>
+        </scene>
+        <!--Stream View Controller-->
+        <scene sceneID="103-NG-P2Q">
+            <objects>
+                <viewController storyboardIdentifier="StreamViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="V09-Au-T09" customClass="StreamViewController" customModule="IPCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BrP-E0-Ypu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FaE-ZI-sdk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oSo-2L-5GO"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
+                        <constraints>
+                            <constraint firstItem="oSo-2L-5GO" firstAttribute="bottom" secondItem="FaE-ZI-sdk" secondAttribute="bottom" id="5Dc-TG-ZCD"/>
+                            <constraint firstItem="FaE-ZI-sdk" firstAttribute="leading" secondItem="oSo-2L-5GO" secondAttribute="leading" id="ICU-g4-ruk"/>
+                            <constraint firstItem="FaE-ZI-sdk" firstAttribute="top" secondItem="oSo-2L-5GO" secondAttribute="top" id="KZt-dk-q4T"/>
+                            <constraint firstItem="oSo-2L-5GO" firstAttribute="trailing" secondItem="FaE-ZI-sdk" secondAttribute="trailing" id="wET-tJ-A0r"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9QQ-Fk-Kp1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1616" y="385"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xEi-Bq-Jv6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="8F9-RI-KSo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1dS-Mk-teD">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="h1a-Hw-Aez"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="siY-qK-3Vj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="103.53260869565219"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_switch_cam" width="200" height="200"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
